@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
+    android:orientation="vertical"
     app:cardCornerRadius="8dp"
     app:cardElevation="6dp"
-    android:orientation="vertical"
     tools:context=".MainActivity">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,34 +16,35 @@
         android:orientation="vertical"
         android:padding="8dp">
 
-        <TextView xmlns:tools="http://schemas.android.com/tools"
-            tools:text="Название:"
+        <TextView
             android:id="@+id/txtName"
             android:layout_width="match_parent"
             android:layout_height="42dp"
             android:padding="1dp"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:text="Название:" />
+
         <View
             android:id="@+id/view1"
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:background="@android:color/darker_gray" />
+
         <TextView
-            tools:text="Описание:"
             android:id="@+id/txtDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="1dp"
             android:textColor="@color/black"
-            android:cardBackgroundColor="@color/black"
-            android:textSize="18sp" >
-        </TextView>
+            android:textSize="18sp"
+            tools:text="Описание:"></TextView>
 
         <CheckBox
             android:id="@+id/checkBox"
             android:layout_width="104dp"
             android:layout_height="wrap_content"
+            android:checked="false"
             android:text="Статус" />
 
         <androidx.constraintlayout.widget.Barrier
