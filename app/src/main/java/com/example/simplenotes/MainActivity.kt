@@ -16,6 +16,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val items = mutableListOf<Note>()
 
+        items.add(Note("Тест", false,"Макар пидр"))
+        items.add(Note("Тест2", false,"Макар пидр2"))
+        items.add(Note("Тест3", false,"Макар пидр3"))
+
         val gridLayout = GridLayoutManager(this, 3, LinearLayoutManager.VERTICAL, false)
         recycler?.layoutManager = gridLayout
 
